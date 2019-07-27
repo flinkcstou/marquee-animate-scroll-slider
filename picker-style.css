@@ -1,0 +1,45 @@
+.marquee {
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  height: 110px;
+  overflow-x: scroll;
+}
+
+.marquee::-webkit-scrollbar {
+  display: none !important;
+}
+
+.track {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+}
+
+.track-stop {
+  animation-play-state: paused;
+}
+
+.content {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: flex;
+  -webkit-box-pack: center;
+}
+
+.app-ticker-content {
+  background: rgba(0, 0, 0, 0.12);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.app-ticker-item {
+  background: rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  width: 130px;
+  height: 80px;
+  text-align: center;
+  position: relative;
+  white-space: normal;
+  padding-top:15px;
+}
