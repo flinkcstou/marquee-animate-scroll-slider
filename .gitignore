@@ -1,2 +1,14 @@
+# Don't track content of these folders
+node_modules/
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+*.so
 
 .idea
+
+*.idea
