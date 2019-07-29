@@ -4,6 +4,8 @@ you can use it like marquee with scrolling and stop animation when tap on item, 
 you can see example with static data. but you want it works dynamic data. message me on my gmail - flinckcstoU@gmail.com.  help you to realise it   
 
 
+if you don't have package.json,  you need to init it (npm init -y);
+
 - first step: npm install picker-scroll-animate 
 
 - second step: create folder - EXAMPLE 
