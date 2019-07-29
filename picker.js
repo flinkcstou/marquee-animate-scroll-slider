@@ -25,10 +25,10 @@ function createKeyFrames(lengthData) {
     const keyFrames = '\
 @keyframes marquee {\
     from {\
-        transform: translateX(-0px);\
+        transform: translate3d(0, 0, 0);\
     }\
     to {\
-       transform: translateX(A_DYNAMIC_VALUE);\
+       transform: translate3d(A_DYNAMIC_VALUE, 0, 0);\
     }\
 }';
     style.innerHTML = keyFrames.replace(/A_DYNAMIC_VALUE/g, WIDTH_ANIMATE);
