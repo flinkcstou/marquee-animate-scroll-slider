@@ -15,7 +15,11 @@
     "scroll",
     "animate-infinite",
     "marquee-animate",
-    "marquee-scroll"
+    "marquee-scroll",
+    "ticker-scroll",
+    "ticker",
+    "marquee",
+    "smart-marquee"
   ],
   "author": "flinkcstou",
   "license": "MIT",
