@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="picker-style.css">
+  <link rel="stylesheet" href="flickity.css">
+  <script src="flickity.js"></script>
+</head>
+<style>
+  /* external css: flickity.css */
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: sans-serif;
+  }
+
+  .carousel {
+    background: #EEE;
+  }
+
+  .carousel-cell {
+    color: #8e9bb2;
+    background: #122341;
+    border-radius: 4px;
+    width: 140px;
+    height: 85px;
+    margin-right: 10px;
+  }
+
+  /* cell number */
+  .carousel-cell:before {
+    display: block;
+    text-align: center;
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+  }
+
+</style>
+<body><h1>Flickity - wrapAround</h1>
+
+<!-- Flickity HTML init -->
+<div>
+  <div class="carousel"
+       ontouchstart="scrollTouchStart(event)"
+       ontouchend="scrollTouchEnd(event)">
+  </div>
+</div>
+
+<template>
+  <div class="carousel-cell track">
+    <div class="up-content">
+      <div class="up-content-left"></div>
+      <div class="up-content-right"></div>
+    </div>
+    <div class="down-content">
+      <div class="down-content-left"></div>
+      <div class="down-content-right"></div>
+    </div>
+  </div>
+</template>
+<script src="picker-flickity.js"></script>
+</body>
+</html>

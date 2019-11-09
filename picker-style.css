@@ -4,10 +4,15 @@
   max-width: 100%;
   height: 110px;
   overflow-x: scroll;
+  scroll-snap-type: x proximity;
 }
 
 .marquee::-webkit-scrollbar {
   display: none !important;
+}
+
+.marquee-snap {
+  scroll-snap-type: none;
 }
 
 .track {
@@ -35,6 +40,13 @@
   background: rgba(0, 0, 0, 0.12);
   margin-left: 10px;
   margin-right: 10px;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+.start {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 
 .app-ticker-item {
@@ -46,4 +58,43 @@
   position: relative;
   white-space: normal;
   padding-top: 15px;
+}
+
+
+.up-content {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 4px;
+}
+
+.up-content-left {
+  font-family: "Gotham Medium";
+  font-size: 12px;
+  margin-left: 6px;
+}
+
+.up-content-right {
+  position: relative;
+  width: 100%;
+  text-align: right;
+}
+
+.down-content {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 4px;
+}
+
+.down-content-left {
+  font-size: 11px;
+  color: #8e9bb2;
+  margin-left: 6px;
+}
+
+.down-content-right {
+  position: relative;
+  width: 100%;
+  text-align: right;
+  font-size: 10px;
+  margin-right: 6px;
 }

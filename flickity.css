@@ -1,0 +1,144 @@
+.gslider-enabled {
+  position: relative;
+}
+
+.gslider-enabled:focus {
+  outline: none;
+}
+
+.gslider-viewport {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+.gslider-slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* draggable */
+
+.gslider-enabled.is-draggable {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.gslider-enabled.is-draggable .gslider-viewport {
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.gslider-enabled.is-draggable .gslider-viewport.is-pointer-down {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+/* ---- gslider-button ---- */
+
+.gslider-button {
+  position: absolute;
+  background: hsla(0, 0%, 100%, 0.75);
+  border: none;
+  color: #333;
+}
+
+.gslider-button:hover {
+  background: white;
+  cursor: pointer;
+}
+
+.gslider-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 5px #19F;
+}
+
+.gslider-button:active {
+  opacity: 0.6;
+}
+
+.gslider-button:disabled {
+  opacity: 0.3;
+  cursor: auto;
+  /* prevent disabled button from capturing pointer up event. #716 */
+  pointer-events: none;
+}
+
+.gslider-button-icon {
+  fill: currentColor;
+}
+
+/* ---- previous/next buttons ---- */
+
+.gslider-prev-next-button {
+  top: 50%;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  /* vertically center */
+  transform: translateY(-50%);
+}
+
+.gslider-prev-next-button.previous {
+  left: 10px;
+}
+
+.gslider-prev-next-button.next {
+  right: 10px;
+}
+
+/* right to left */
+.gslider-rtl .gslider-prev-next-button.previous {
+  left: auto;
+  right: 10px;
+}
+
+.gslider-rtl .gslider-prev-next-button.next {
+  right: auto;
+  left: 10px;
+}
+
+.gslider-prev-next-button .gslider-button-icon {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  width: 60%;
+  height: 60%;
+}
+
+/* ---- page dots ---- */
+
+.gslider-page-dots {
+  position: absolute;
+  width: 100%;
+  bottom: -25px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  line-height: 1;
+}
+
+.gslider-rtl .gslider-page-dots {
+  direction: rtl;
+}
+
+.gslider-page-dots .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 8px;
+  background: #333;
+  border-radius: 50%;
+  opacity: 0.25;
+  cursor: pointer;
+}
+
+.gslider-page-dots .dot.is-selected {
+  opacity: 1;
+}
